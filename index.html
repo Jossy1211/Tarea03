@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Configuración del Viewport para diseño responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 3 - Diseño Web Responsivo y Bootstrap 5</title>
+
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+
+    <div class="container my-4">
+        <!-- Fondo Principal -->
+        <div class="contenedor-principal shadow-sm rounded">
+            
+            <!-- HEADER -->
+            <header class="row g-2 mb-3">
+                <div class="col-12 col-md-5">
+                    <div class="header-img p-3 h-100 d-flex flex-column justify-content-center">
+                        <h5>Imagen o Información referencial</h5>
+                        <p class="mb-0 small"><strong>Curso:</strong> ISW-512 Diseño de Aplicaciones Web</p>
+                        <p class="mb-0 small"><strong>Estudiante:</strong> Joselyn Vargas Pérez</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="header-texto p-3 h-100 d-flex flex-column justify-content-center">
+                        <h2>Diseño Web Responsivo & Bootstrap 5</h2>
+                        <p class="mb-0">Documentación y maquetación adaptativa en cumplimiento con los requerimientos de la Tarea 3.</p>
+                    </div>
+                </div>
+            </header>
+
+            <!-- NAVEGACIÓN PRINCIPAL (Control Navbar) -->
+            <nav class="navbar navbar-expand-lg navbar-custom rounded mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="#">Menú Principal</a>
+                    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navMenu">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="#responsivo">Diseño Responsivo</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#viewport">Viewport</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#mediaqueries">Media Queries</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- CARROUSEL DINÁMICO (Control Carousel) -->
+            <div id="carouselConceptos" class="carousel slide mb-3" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active p-4 bg-dark text-white text-center">
+                        <h4>Diseño Adaptable</h4>
+                        <p>Asegura que la experiencia del usuario sea fluida e interactiva en cualquier tipo de dispositivo.</p>
+                    </div>
+                    <div class="carousel-item p-4 bg-secondary text-white text-center">
+                        <h4>Grid System & Flexbox</h4>
+                        <p>Facilita la distribución limpia y estructurada de elementos mediante filas y columnas.</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselConceptos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselConceptos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- CONTENIDO DE DOS COLUMNAS: ASIDE Y MAIN -->
+            <div class="row g-2 mb-3">
+                <!-- ASIDE -->
+                <aside class="col-12 col-md-4">
+                    <div class="seccion-aside h-100">
+                        <h5 class="fw-bold">Aside</h5>
+                        <div class="caja-contenido-aside my-2">
+                            <h6>Contenido Lateral</h6>
+                            <p class="small mb-0">El diseño responsivo ajusta el layout según el tamaño de la pantalla activa mediante reglas flexibles.</p>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- MAIN -->
+                <main class="col-12 col-md-8">
+                    <div class="seccion-main h-100">
+                        <h5 class="fw-bold">Main</h5>
+                        
+                        <!-- ARTÍCULO 1 -->
+                        <article id="responsivo" class="articulo">
+                            <h6>Article 1: Concepto de Diseño Web Responsivo & Viewport</h6>
+                            <p class="small mb-1">
+                                <strong>Diseño Responsivo:</strong> Filosofía de desarrollo que busca adaptar las páginas web a los diferentes tamaños de pantalla (PC, Tablet, Smartphone).
+                            </p>
+                            <p class="small mb-0">
+                                <strong>Viewport:</strong> Área visible de la página en el navegador. Se configura mediante <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> para evitar escalados no deseados en dispositivos móviles.
+                            </p>
+                        </article>
+
+                        <!-- ARTÍCULO 2 -->
+                        <article id="bootstrap" class="articulo">
+                            <h6>Article 2: Media Queries & Componentes de Bootstrap 5</h6>
+                            <p class="small mb-1">
+                                <strong>CSS3 Media Queries:</strong> Permiten aplicar reglas de estilo según características del dispositivo .
+                            </p>
+                            <p class="small mb-0">
+                                <strong>Bootstrap 5:</strong> Framework CSS que ofrece contenedores (<em>Containers</em>), sistema de grillas de 12 columnas (<em>Grid System</em>), utilidad <em>Flex</em>, componentes como <em>Navbar</em> y <em>Carousel</em>.
+                            </p>
+                        </article>
+                    </div>
+                </main>
+            </div>
+
+            <!-- GALERÍA / BLOQUE DE IMÁGENES -->
+            <section class="bloque-imagenes rounded mb-3">
+                <div class="row g-2">
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="caja-img">img 1</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="caja-img">img 2</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="caja-img">img 3</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <div class="caja-img">img 4</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer-custom rounded">
+                <div class="row g-2">
+                    <div class="col-12 col-md-6">
+                        <div class="footer-caja">Contenido Footer 1</div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="footer-caja">Contenido Footer 2</div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+   
+</body>
+</html>

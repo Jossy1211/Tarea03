@@ -1,0 +1,96 @@
+       /* Estilos personalizados para emular el maquetado */
+     
+        body {
+            background-color: #d1d5db; /* Fondo del Navegador */
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor-principal {
+            background-color: #e5e7eb; /* Fondo Principal */
+            border: 2px solid #6b7280;
+            padding: 15px;
+        }
+
+        /* Sección Header */
+        .header-img {
+            background-color: #c0ebb0;
+            border: 1px solid #4b5563;
+            min-height: 120px;
+        }
+
+        .header-texto {
+            background-color: #86efac;
+            border: 1px solid #4b5563;
+            min-height: 120px;
+        }
+
+        /* Navegación */
+        .navbar-custom {
+            background-color: #22543d !important;
+        }
+
+        .navbar-custom .nav-link, .navbar-custom .navbar-brand {
+            color: #ffffff !important;
+        }
+
+        /* Aside y Main */
+        .seccion-aside {
+            background-color: #cbd5e1;
+            border: 1px solid #4b5563;
+            padding: 15px;
+        }
+
+        .caja-contenido-aside {
+            background-color: #a5b4fc;
+            border: 1px solid #4338ca;
+            padding: 15px;
+            min-height: 100px;
+        }
+
+        .seccion-main {
+            background-color: #dbeafe;
+            border: 1px solid #4b5563;
+            padding: 15px;
+        }
+
+        .articulo {
+            background-color: #93c5fd;
+            border: 1px solid #1d4ed8;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Bloque de imágenes */
+        .bloque-imagenes {
+            background-color: #ffedd5;
+            border: 1px solid #4b5563;
+            padding: 15px;
+        }
+
+        .caja-img {
+            background-color: #fdba74;
+            border: 1px solid #c2410c;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer-custom {
+            background-color: #4b5563;
+            color: white;
+            padding: 15px;
+        }
+
+        .footer-caja {
+            background-color: #374151;
+            border: 1px solid #1f2937;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .header-img, .header-texto {
+                text-align: center;
+            }
+        }
